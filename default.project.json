@@ -1,0 +1,1231 @@
+{
+ "name": "skybound",
+ "tree": {
+  "$className": "DataModel",
+  "Lighting": {
+   "$properties": {
+    "Ambient": [
+     0.25,
+     0.28,
+     0.35
+    ],
+    "Brightness": 2,
+    "ClockTime": 10,
+    "FogColor": [
+     0.65,
+     0.75,
+     0.9
+    ],
+    "FogEnd": 1500,
+    "FogStart": 300,
+    "GlobalShadows": true,
+    "OutdoorAmbient": [
+     0.45,
+     0.5,
+     0.6
+    ],
+    "Technology": "Future"
+   }
+  },
+  "Players": {
+   "$properties": {
+    "CharacterAutoLoads": true
+   }
+  },
+  "ReplicatedStorage": {
+   "Shared": {
+    "$path": "src/shared"
+   },
+   "SkyboundRemotes": {
+    "$className": "RemoteEvent"
+   }
+  },
+  "ServerScriptService": {
+   "Server": {
+    "$path": "src/server"
+   }
+  },
+  "SoundService": {
+   "$properties": {
+    "RespectFilteringEnabled": true
+   }
+  },
+  "StarterPlayer": {
+   "StarterPlayerScripts": {
+    "Client": {
+     "$path": "src/client"
+    }
+   }
+  },
+  "Workspace": {
+   "$properties": {
+    "FilteringEnabled": true
+   },
+   "Checkpoints": {
+    "$className": "Folder",
+    "Checkpoint_12": {
+     "$className": "SpawnLocation",
+     "$properties": {
+      "Anchored": true,
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       0.2,
+       0.9,
+       0.35
+      ],
+      "Duration": 0,
+      "Enabled": true,
+      "Material": "Neon",
+      "Neutral": true,
+      "Position": [
+       14,
+       48.5,
+       -20
+      ],
+      "Size": [
+       6,
+       1,
+       6
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Checkpoint_4": {
+     "$className": "SpawnLocation",
+     "$properties": {
+      "Anchored": true,
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       0.2,
+       0.9,
+       0.35
+      ],
+      "Duration": 0,
+      "Enabled": true,
+      "Material": "Neon",
+      "Neutral": true,
+      "Position": [
+       14,
+       16.5,
+       -16
+      ],
+      "Size": [
+       6,
+       1,
+       6
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Checkpoint_8": {
+     "$className": "SpawnLocation",
+     "$properties": {
+      "Anchored": true,
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       0.2,
+       0.9,
+       0.35
+      ],
+      "Duration": 0,
+      "Enabled": true,
+      "Material": "Neon",
+      "Neutral": true,
+      "Position": [
+       -14,
+       32.5,
+       -16
+      ],
+      "Size": [
+       6,
+       1,
+       6
+      ],
+      "TopSurface": "Smooth"
+     }
+    }
+   },
+   "Clouds": {
+    "$className": "Folder",
+    "Cloud_1": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "CanCollide": false,
+      "CanTouch": false,
+      "Color": [
+       0.95,
+       0.95,
+       1
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       30,
+       25,
+       -40
+      ],
+      "Shape": "Ball",
+      "Size": [
+       16,
+       10,
+       16
+      ],
+      "Transparency": 0.4
+     }
+    },
+    "Cloud_2": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "CanCollide": false,
+      "CanTouch": false,
+      "Color": [
+       0.95,
+       0.95,
+       1
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       -35,
+       35,
+       -10
+      ],
+      "Shape": "Ball",
+      "Size": [
+       12,
+       8,
+       12
+      ],
+      "Transparency": 0.4
+     }
+    },
+    "Cloud_3": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "CanCollide": false,
+      "CanTouch": false,
+      "Color": [
+       0.95,
+       0.95,
+       1
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       25,
+       45,
+       20
+      ],
+      "Shape": "Ball",
+      "Size": [
+       14,
+       9,
+       14
+      ],
+      "Transparency": 0.4
+     }
+    },
+    "Cloud_4": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "CanCollide": false,
+      "CanTouch": false,
+      "Color": [
+       0.95,
+       0.95,
+       1
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       -25,
+       55,
+       -35
+      ],
+      "Shape": "Ball",
+      "Size": [
+       10,
+       7,
+       10
+      ],
+      "Transparency": 0.4
+     }
+    },
+    "Cloud_5": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "CanCollide": false,
+      "CanTouch": false,
+      "Color": [
+       0.95,
+       0.95,
+       1
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       10,
+       65,
+       -20
+      ],
+      "Shape": "Ball",
+      "Size": [
+       12,
+       8,
+       12
+      ],
+      "Transparency": 0.4
+     }
+    }
+   },
+   "Coins": {
+    "$className": "Folder",
+    "Coin_1": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": false,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.8,
+       0.15
+      ],
+      "Material": "Neon",
+      "Position": [
+       0,
+       6.5,
+       -16
+      ],
+      "Shape": "Cylinder",
+      "Size": [
+       0.4,
+       2.2,
+       2.2
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Coin_10": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": false,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.8,
+       0.15
+      ],
+      "Material": "Neon",
+      "Position": [
+       0,
+       54.5,
+       -12
+      ],
+      "Shape": "Cylinder",
+      "Size": [
+       0.4,
+       2.2,
+       2.2
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Coin_2": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": false,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.8,
+       0.15
+      ],
+      "Material": "Neon",
+      "Position": [
+       0,
+       10.5,
+       -30
+      ],
+      "Shape": "Cylinder",
+      "Size": [
+       0.4,
+       2.2,
+       2.2
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Coin_3": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": false,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.8,
+       0.15
+      ],
+      "Material": "Neon",
+      "Position": [
+       14,
+       14.5,
+       -30
+      ],
+      "Shape": "Cylinder",
+      "Size": [
+       0.4,
+       2.2,
+       2.2
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Coin_4": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": false,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.8,
+       0.15
+      ],
+      "Material": "Neon",
+      "Position": [
+       14,
+       22.5,
+       -2
+      ],
+      "Shape": "Cylinder",
+      "Size": [
+       0.4,
+       2.2,
+       2.2
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Coin_5": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": false,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.8,
+       0.15
+      ],
+      "Material": "Neon",
+      "Position": [
+       0,
+       26.5,
+       -2
+      ],
+      "Shape": "Cylinder",
+      "Size": [
+       0.4,
+       2.2,
+       2.2
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Coin_6": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": false,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.8,
+       0.15
+      ],
+      "Material": "Neon",
+      "Position": [
+       -14,
+       34.5,
+       -16
+      ],
+      "Shape": "Cylinder",
+      "Size": [
+       0.4,
+       2.2,
+       2.2
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Coin_7": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": false,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.8,
+       0.15
+      ],
+      "Material": "Neon",
+      "Position": [
+       -14,
+       38.5,
+       -30
+      ],
+      "Shape": "Cylinder",
+      "Size": [
+       0.4,
+       2.2,
+       2.2
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Coin_8": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": false,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.8,
+       0.15
+      ],
+      "Material": "Neon",
+      "Position": [
+       -4,
+       42.5,
+       -34
+      ],
+      "Shape": "Cylinder",
+      "Size": [
+       0.4,
+       2.2,
+       2.2
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Coin_9": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": false,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.8,
+       0.15
+      ],
+      "Material": "Neon",
+      "Position": [
+       14,
+       50.5,
+       -20
+      ],
+      "Shape": "Cylinder",
+      "Size": [
+       0.4,
+       2.2,
+       2.2
+      ],
+      "TopSurface": "Smooth"
+     }
+    }
+   },
+   "DisappearingPlatforms": {
+    "$className": "Folder",
+    "Stage_13": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.4,
+       0.698
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       0,
+       51,
+       -12
+      ],
+      "Size": [
+       6,
+       2,
+       6
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Stage_7": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       0.251,
+       0.878,
+       0.816
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       -14,
+       27,
+       -2
+      ],
+      "Size": [
+       8,
+       2,
+       8
+      ],
+      "TopSurface": "Smooth"
+     }
+    }
+   },
+   "Hazards": {
+    "$className": "Folder",
+    "KillStrip_1": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.1,
+       0.1
+      ],
+      "Material": "Neon",
+      "Position": [
+       -4,
+       40.5,
+       -33
+      ],
+      "Size": [
+       8,
+       1,
+       1
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "KillStrip_2": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.1,
+       0.1
+      ],
+      "Material": "Neon",
+      "Position": [
+       -4,
+       40.5,
+       -35
+      ],
+      "Size": [
+       8,
+       1,
+       1
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Lava": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.12,
+       0.08
+      ],
+      "Material": "Neon",
+      "Position": [
+       0,
+       -21,
+       -17
+      ],
+      "Size": [
+       300,
+       2,
+       300
+      ],
+      "TopSurface": "Smooth"
+     }
+    }
+   },
+   "MovingPlatforms": {
+    "$className": "Folder",
+    "Stage_11": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       0.251,
+       0.698,
+       1
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       8,
+       43,
+       -34
+      ],
+      "Size": [
+       6,
+       2,
+       6
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Stage_5": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       0.698,
+       0.4,
+       1
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       14,
+       19,
+       -2
+      ],
+      "Size": [
+       6,
+       2,
+       6
+      ],
+      "TopSurface": "Smooth"
+     }
+    }
+   },
+   "SignPost": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "CanCollide": true,
+     "CanTouch": false,
+     "Color": [
+      0.5,
+      0.35,
+      0.2
+     ],
+     "Material": "Wood",
+     "Position": [
+      -14,
+      2,
+      -6
+     ],
+     "Size": [
+      1,
+      4,
+      1
+     ],
+     "TopSurface": "Smooth"
+    },
+    "SignGui": {
+     "$className": "BillboardGui",
+     "$properties": {
+      "Active": true,
+      "AlwaysOnTop": true,
+      "Size": {
+       "UDim2": [
+        [
+         0,
+         380
+        ],
+        [
+         0,
+         150
+        ]
+       ]
+      },
+      "StudsOffsetWorldSpace": [
+       0,
+       4,
+       0
+      ]
+     },
+     "Subtitle": {
+      "$className": "TextLabel",
+      "$properties": {
+       "BackgroundTransparency": 1,
+       "Font": "GothamBold",
+       "Position": {
+        "UDim2": [
+         [
+          0,
+          0
+         ],
+         [
+          0.55,
+          0
+         ]
+        ]
+       },
+       "Size": {
+        "UDim2": [
+         [
+          1,
+          0
+         ],
+         [
+          0.45,
+          0
+         ]
+        ]
+       },
+       "Text": "Climb 14 stages to the golden pad!",
+       "TextColor3": [
+        0.15,
+        0.2,
+        0.45
+       ],
+       "TextScaled": true,
+       "TextStrokeColor3": [
+        1,
+        1,
+        1
+       ],
+       "TextStrokeTransparency": 0.2
+      }
+     },
+     "Title": {
+      "$className": "TextLabel",
+      "$properties": {
+       "BackgroundTransparency": 1,
+       "Font": "GothamBold",
+       "Position": {
+        "UDim2": [
+         [
+          0,
+          0
+         ],
+         [
+          0,
+          0
+         ]
+        ]
+       },
+       "Size": {
+        "UDim2": [
+         [
+          1,
+          0
+         ],
+         [
+          0.55,
+          0
+         ]
+        ]
+       },
+       "Text": "SKYBOUND",
+       "TextColor3": [
+        0.1,
+        0.15,
+        0.35
+       ],
+       "TextScaled": true,
+       "TextStrokeColor3": [
+        1,
+        1,
+        1
+       ],
+       "TextStrokeTransparency": 0.2
+      }
+     }
+    }
+   },
+   "Spawn": {
+    "$className": "SpawnLocation",
+    "$properties": {
+     "Anchored": true,
+     "CanCollide": true,
+     "CanTouch": true,
+     "Color": [
+      0.25,
+      0.85,
+      0.35
+     ],
+     "Duration": 0,
+     "Enabled": true,
+     "Material": "SmoothPlastic",
+     "Neutral": true,
+     "Position": [
+      0,
+      0.5,
+      6
+     ],
+     "Size": [
+      8,
+      1,
+      8
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "SpawnPlaza": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": true,
+     "CanTouch": true,
+     "Color": [
+      0.35,
+      0.65,
+      0.3
+     ],
+     "Locked": true,
+     "Material": "Grass",
+     "Position": [
+      0,
+      -1,
+      0
+     ],
+     "Size": [
+      40,
+      2,
+      40
+     ],
+     "TopSurface": "Smooth"
+    }
+   },
+   "Stages": {
+    "$className": "Folder",
+    "Stage_1": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.498,
+       0.314
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       0,
+       3,
+       -16
+      ],
+      "Size": [
+       10,
+       2,
+       10
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Stage_10": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       0.251,
+       0.839,
+       0.314
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       -4,
+       39,
+       -34
+      ],
+      "Size": [
+       8,
+       2,
+       8
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Stage_12": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       0.698,
+       0.4,
+       1
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       14,
+       47,
+       -20
+      ],
+      "Size": [
+       10,
+       2,
+       10
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Stage_14": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.843,
+       0
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       0,
+       55,
+       0
+      ],
+      "Size": [
+       14,
+       2,
+       14
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Stage_2": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.8,
+       0
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       0,
+       7,
+       -30
+      ],
+      "Size": [
+       8,
+       2,
+       8
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Stage_3": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       0.251,
+       0.839,
+       0.314
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       14,
+       11,
+       -30
+      ],
+      "Size": [
+       8,
+       2,
+       8
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Stage_4": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       0.251,
+       0.698,
+       1
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       14,
+       15,
+       -16
+      ],
+      "Size": [
+       10,
+       2,
+       10
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Stage_6": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.4,
+       0.698
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       0,
+       23,
+       -2
+      ],
+      "Size": [
+       8,
+       2,
+       8
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Stage_8": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.498,
+       0.314
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       -14,
+       31,
+       -16
+      ],
+      "Size": [
+       10,
+       2,
+       10
+      ],
+      "TopSurface": "Smooth"
+     }
+    },
+    "Stage_9": {
+     "$className": "Part",
+     "$properties": {
+      "Anchored": true,
+      "BottomSurface": "Smooth",
+      "CanCollide": true,
+      "CanTouch": true,
+      "Color": [
+       1,
+       0.8,
+       0
+      ],
+      "Material": "SmoothPlastic",
+      "Position": [
+       -14,
+       35,
+       -30
+      ],
+      "Size": [
+       4,
+       2,
+       14
+      ],
+      "TopSurface": "Smooth"
+     }
+    }
+   },
+   "WinPad": {
+    "$className": "Part",
+    "$properties": {
+     "Anchored": true,
+     "BottomSurface": "Smooth",
+     "CanCollide": false,
+     "CanTouch": true,
+     "Color": [
+      1,
+      0.8,
+      0.1
+     ],
+     "Material": "Neon",
+     "Position": [
+      0,
+      56.5,
+      0
+     ],
+     "Size": [
+      6,
+      1,
+      6
+     ],
+     "TopSurface": "Smooth"
+    }
+   }
+  }
+ }
+}
